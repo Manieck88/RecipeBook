@@ -1,1 +1,10 @@
-<app-header></app-header>
+<app-header (displayElement)='toDisplay($event)'></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf='choosen === "recipes"'></app-recipes>
+      <app-shopping-list *ngIf='choosen === "shoppingList"'></app-shopping-list>
+    </div>
+  </div>
+</div>
+

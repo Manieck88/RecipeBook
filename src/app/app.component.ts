@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'RecipeBook';
+  title = 'Recipe Book';
+  choosen: string = 'recipes';
+
+  toDisplay(event: string) {
+    this.choosen = event;
+  }
 }

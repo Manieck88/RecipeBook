@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "RecipeBook": {
+    "udemy-angular-project": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/RecipeBook",
+            "outputPath": "dist/udemy-angular-project",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "RecipeBook:build"
+            "browserTarget": "udemy-angular-project:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "RecipeBook:build:production"
+              "browserTarget": "udemy-angular-project:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "RecipeBook:build"
+            "browserTarget": "udemy-angular-project:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "RecipeBook-e2e": {
+    "udemy-angular-project-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "RecipeBook:serve"
+            "devServerTarget": "udemy-angular-project:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "RecipeBook:serve:production"
+              "devServerTarget": "udemy-angular-project:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "RecipeBook"
+  "defaultProject": "udemy-angular-project"
 }
